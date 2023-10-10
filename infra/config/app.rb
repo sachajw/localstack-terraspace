@@ -23,5 +23,5 @@ Terraspace.configure do |config|
   # copy_modules setting introduced 2.2.5 to speed up terraspace build
   # See: https://terraspace.cloud/docs/config/reference
   config.build.copy_modules = true
-  config.build.cache_dir	= ":REGION/:APP/:ROLE/:ENV/:BUILD_DIR"
+  config.build.cache_dir = ":REGION/:APP/:ROLE/:ENV/:BUILD_DIR"
 end
