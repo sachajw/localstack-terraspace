@@ -3,7 +3,7 @@ resource "random_pet" "this" {
 }
 
 module "bucket" {
-  source     = "../../modules/example"
-  bucket     = "bucket-${random_pet.this.id}"
-  tags       = var.tags
+  source = "../../modules/example"
+  bucket = "bucket-${random_pet.this.id}"
+  tags   = var.tags
 }

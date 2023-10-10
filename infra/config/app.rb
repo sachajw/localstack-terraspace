@@ -1,8 +1,8 @@
 require 'aws-sdk-s3'
 
 Aws.config.update(
-  endpoint: 'http://localhost.cloud.local.gd:4566',
-  credentials: Aws::SharedCredentials.new(profile_name: 'localstack-dev', access_key_id: 'fake', secret_access_key: 'fake', ignore_configured_endpoint_urls: 'true'),
+  endpoint: 'http://s3.local.gd:4566',
+  credentials: Aws::SharedCredentials.new(profile_name: 'localstack-dev', access_key_id: 'fake', secret_access_key: 'fake', ignore_configured_endpoint_urls: 'false'),
   s3: {
     http_wire_trace: true,
     force_path_style: true,
